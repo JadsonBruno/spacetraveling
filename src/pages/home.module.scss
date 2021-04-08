@@ -1,1 +1,84 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 120px);
+
+  button.loadButton {
+    color: var(--pink-500);
+    font-size: 1.125rem;
+    text-align: justify;
+    font-weight: 600;
+    background: none;
+    border: none;
+  }
+}
+
+.posts {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem 0 4rem 0;
+
+    a {
+        display: block;
+        max-height: 108px;
+        margin-bottom: 4.5rem;
+
+        time {
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            color: var(--gray-700);
+            font-weight: 400;
+            min-width: 11rem;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          font-size: 0.875rem;
+          color: var(--gray-700);
+          font-weight: 400;
+          min-width: 11rem;
+        }
+
+        strong {
+            display: block;
+            font-size: 2rem;
+            margin-top: 1rem;
+            line-height: 2rem;
+            transition: color 0.2s;
+        }
+
+        p {
+            color: var(--gray-500);
+            margin-top: 0.5rem;
+            line-height: 1.625rem;
+            font-weight: 400;
+            font-size: 1.125rem;
+        }
+
+        div.postInfo {
+          margin-top: 1.5rem;
+          display: flex;
+          max-width: 100%;
+          width: 17.5rem;
+          justify-content: space-between;
+          align-items: center;
+
+          svg {
+            margin-right: 0.5rem;
+            font-size: 1.25rem;
+          }
+        }
+
+        &:hover strong {
+            color: var(--pink-500);
+        }
+
+        &:last-child {
+          margin-bottom: 2rem;
+        }
+    }
+}
