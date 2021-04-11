@@ -10,7 +10,8 @@
 .contentContainer {
   max-width: 1120px;
   margin: 5rem auto;
-
+  display: flex;
+  flex-direction: column;
 
   h1 {
     font-size: 3rem;
@@ -21,6 +22,13 @@
   div {
     display: flex;
     margin: 1.5rem 0 4rem;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      margin: 0 0 1.125rem 0 ;
+    }
 
     .infoItem {
       font-size: 0.875rem;
@@ -36,6 +44,11 @@
         font-size: 1.25rem;
       }
     }
+
+    .edition {
+      font-style: italic;
+      flex-wrap: wrap;
+    }
   }
 
   section {
@@ -49,6 +62,55 @@
       margin: 1.5rem 0 2rem;
       color: var(--gray-700);
       font-weight: 400;
+    }
+  }
+
+  footer.footerContainer {
+    padding-top: 3rem;
+    margin-top: 3.75rem;
+    border-top: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    div {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+
+      font-family: inherit;
+
+      span {
+        font-weight: 400;
+        font-size: 1.125rem;
+        color: var(--gray-300);
+        font-style: normal;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1rem;
+        line-height: 1.21rem;
+        color: var(--pink-500);
+      }
+
+      a:hover {
+        filter: brightness(0.9);
+      }
+    }
+
+    div.nextPost {
+      a {
+        align-self: flex-end;
+      }
+
+      span {
+        align-self: flex-end;
+      }
     }
   }
 }
